@@ -1,319 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manoj Sai Tatavarthi - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manoj Sai Tatavarthi — Portfolio</title>
+<meta name="description" content="Manoj Sai Tatavarthi — Software Engineer at Accenture. Automation, .NET, PowerShell, data science.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
-
 <body>
-    <section id="home">
-        <header>
-            <h2>Welcome to My World</h2>
-            <h1>I'm Manoj Sai Tatavarthi</h1>
-            <p>B.Tech in Computer Science and Engineering (Data Science)</p>
-        </header>
-    </section>
+<div class="noise" aria-hidden="true"></div>
+<div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div class="curtain" id="curtain" aria-hidden="true">
+  <div class="curtain-bg"></div>
+  <div class="curtain-image-wrap">
+    <img src="images/developer-mind.png" alt="" class="curtain-image">
+  </div>
+  <div class="curtain-vignette"></div>
+  <div class="curtain-content">
+    <div class="curtain-topline"><span class="pulse-dot"></span> INITIALIZING DEVELOPER MODE</div>
+    <div class="curtain-title"><span>ENTER THE</span><strong>DEVELOPER'S MIND</strong></div>
+    <div class="curtain-bottom"><span>CODE / AUTOMATION / AI / M365</span><span id="curtainStatus">LOADING 0%</span></div>
+    <div class="curtain-progress"><span id="curtainProgress"></span></div>
+  </div>
+</div>
 
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="#home" class="brand"><span class="brand-mark">//</span> Manoj Sai Tatavarthi</a>
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">My Projects</a></li>
-            <li><a href="#certificates">My Certifications</a></li>
-            <li><a href="#services">My Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-            
-        </ul>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#certificates">Credentials</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+    <span class="nav-status">PORTFOLIO / 2026</span>
+  </div>
+</div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <div class="about-image">
-                <img src="images/profile.jpg" alt="Manoj Sai Tatavarthi">
-            </div>
-            <div class="about-details">
-                <div class="skills">
-                    <h3 onclick="toggleSection('skills-content')">Skills</h3>
-                    <div id="skills-content" class="content">
-                        <table>
-                            <tr>
-                                <td>Programming Languages</td>
-                                <td>Python, C</td>
-                            </tr>
-                            <tr>
-                                <td>Web Technologies</td>
-                                <td> HTML, CSS, Javascript and Basics of Node.js Framework</td>
-                            </tr>
-                            <tr>
-                                <td>Database Technologies</td>
-                                <td>MySQL</td>
-                            </tr>
-                            <tr>
-                                <td>Tools</td>
-                                <td> VS Code, MS Excel, MS Powerpoint, Wordpress (Basics)</td>
-                            </tr>
-                            <!-- Add more skills here -->
-                        </table>
-                    </div>
-                </div>
-                <div class="experience">
-                    <h3 onclick="toggleSection('experience-content')">Experience</h3>
-                    <div id="experience-content" class="content">
-                        <table>
-                            <tr>
-                                <th>Company Name</th>
-                                <th>Domain</th>
-                                <th>Role</th>
-                            </tr>
-                            <!-- Add experience details here -->
-                            <tr>
-                                <td>SLASH MARK</td>
-                                <td>MACHINE LEARNING</td>
-                                <td>Intern</td>
-                            </tr>
-                            <tr>
-                                <td>HMI ENGINEERING SERVICES</td>
-                                <td>PYTHON FOR DATA SCIENCE</td>
-                                <td>Intern</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="education">
-                    <h3 onclick="toggleSection('education-content')">Education</h3>
-                    <div id="education-content" class="content">
-                        <table>
-                            <tr>
-                                <th>Institution</th>
-                                <th>Degree</th>
-                                <th>Year</th>
-                            </tr>
-                            <tr>
-                                <td>Raghu Institute Of Technology</td>
-                                <td>B.Tech in Computer Science and Engineering (Data Science)</td>
-                                <td>2024</td>
-                            </tr>
-                            <tr>
-                                <td>Naryana Junior College</td>
-                                <td>XII (MPC)</td>
-                                <td>2020</td>
-                            </tr>
-                            <tr>
-                                <td>Vidya Vikas EM High School</td>
-                                <td>HIGH SCHOOL</td>
-                                <td>2018</td>
-                            </tr>
-                            <!-- Add more education details here -->
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<header id="home" class="hero cinematic-section">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-orb orb-a"></div>
+    <div class="hero-orb orb-b"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-scanline"></div>
+    <div class="hero-glow" id="heroGlow"><div class="hero-glow-inner"></div></div>
+    <span class="hero-trace trace-1"></span>
+    <span class="hero-trace trace-2"></span>
+    <span class="hero-trace trace-3"></span>
+  </div>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects-container">
-            <!-- Project Cards will be dynamically generated here -->
-        </div>
-    </section>
+  <div class="hero-layout">
+    <div class="hero-copy" data-parallax="0.10">
+      <div class="hero-kicker cinematic-reveal"><span class="pulse-dot"></span> AVAILABLE FOR NEW OPPORTUNITIES</div>
+      <h1 class="hero-title">
+        <span class="line">Manoj Sai</span>
+        <span class="line accent">Tatavarthi</span>
+      </h1>
+      <p class="hero-role cinematic-reveal">Packaged App Development Associate, Accenture — M365 &amp; Automation</p>
+      <p class="hero-desc cinematic-reveal">I build software that solves real problems. I enjoy writing code, exploring new technologies, automating the repetitive, and turning ideas into tools that make work faster, smarter, and simpler.</p>
+      <div class="hero-actions cinematic-reveal">
+        <a href="images/Manoj_Sai_Tatavarthi_CV.pdf" download class="btn btn-primary magnetic">Download CV</a>
+        <a href="#projects" class="btn btn-ghost magnetic">See the work <span>↓</span></a>
+      </div>
+      <div class="hero-stack cinematic-reveal">
+        <span>PYTHON</span><span>.NET</span><span>POWERSHELL</span><span>SQL</span><span>M365</span><span>AI</span>
+      </div>
+    </div>
 
+    <div class="hero-portrait cinematic-reveal" data-parallax="-0.07">
+      <div class="portrait-halo"></div>
+      <div class="portrait-grid"></div>
+      <div class="portrait-frame">
+        <div class="portrait-corner corner-tl"></div><div class="portrait-corner corner-tr"></div>
+        <div class="portrait-corner corner-bl"></div><div class="portrait-corner corner-br"></div>
+        <img src="images/developer-mind.png" alt="Manoj Sai Tatavarthi — developer" class="portrait-image">
+        <div class="portrait-scan"></div>
+        <div class="portrait-label label-top"><span>DEV.MIND</span><span>ONLINE</span></div>
+        <div class="portrait-label label-bottom"><span>BUILD / AUTOMATE / SOLVE</span><span>01 — 2026</span></div>
+      </div>
+      <div class="floating-chip chip-a"><span class="chip-dot"></span> SYSTEMS THINKING</div>
+      <div class="floating-chip chip-b">&lt; / &gt; CODE</div>
+      <div class="floating-chip chip-c">AI × AUTOMATION</div>
+    </div>
+  </div>
 
-    <section id="certificates">
-        <h2>Certificates</h2>
-        <div class="certificates-container">
-            <table>
-                <tr>
-                    <th>Issued By</th>
-                    <th>Certificate Name</th>
-                    <th>Link</th>
-                </tr>
-                <tr>
-                    <td>Hacker Rank</td>
-                    <td>Python Basics Certificate</td>
-                    <td><a href="certificates/certificate2.pdf" target="_blank">Click Here</a></td>
-                </tr>
-                <tr>
-                    <td>NPTEL</td>
-                    <td>Programming, Data Structures and Algorithms using Python</td>
-                    <td><a href="certificates/certificate1.jpg" target="_blank">Click Here</a></td>
-                </tr>
-                <tr>
-                    <td>Infosys Springboard</td>
-                    <td>Python for Data Science</td>
-                    <td><a href="certificates/certificate3.pdf" target="_blank">Click Here</a></td>
-                </tr>
-                <tr>
-                    <td>CODING NINJAS</td>
-                    <td>Certificate of Achievement in Coding Competition (All India Rank : 11744)</td>
-                    <td><a href="certificates/certificate4.pdf" target="_blank">Click Here</a></td>
-                </tr>
-                <tr>
-                    <td>Great Learning</td>
-                    <td>Data Science Foundations</td>
-                    <td><a href="certificates/certificate5.jpg" target="_blank">Click Here</a></td>
-                </tr>
-                <tr>
-                    <td>HMI Engineering Services</td>
-                    <td>Data Science Using Python (Internship)</td>
-                    <td><a href="certificates/certificate6.pdf" target="_blank">Click Here</a></td>
-                </tr>
-                <tr>
-                    <td>Udemy</td>
-                    <td>Complete SQL and RDBMS</td>
-                    <td><a href="certificates/certificate7.jpg" target="_blank">Click Here</a></td>
-                </tr>
-                <tr>
-                    <td>Slash Mark</td>
-                    <td>MACHINE LEARNING (Internship)</td>
-                    <td><a href="certificates/certificate8.pdf" target="_blank">Click Here</a></td>
-                </tr>
-                <tr>
-                    <td>Udemy</td>
-                    <td>Javascript with HTML5 and CSS3</td>
-                    <td><a href="certificates/certificate9.pdf" target="_blank">Click Here</a></td>
-                </tr>
+  <div class="hero-meta">
+    <span>22° / 2026</span>
+    <span>SCROLL TO EXPLORE ↓</span>
+  </div>
+</header>
 
-                
-                <!-- Add more certificates as needed -->
-            </table>
-        </div>
-    </section>
-    
-    <section id="services">
-        <h2>My Services</h2>
-        <div class="services-container">
-            <div class="service-card">
-                <h3>Web Designing</h3>
-                <p>Creating visually appealing and user-friendly website designs using HTML, CSS, and JavaScript or a smooth experience.</p>
-            </div>
-            <div class="service-card">
-                <h3>Data Science and Machine Learning</h3>
-                <p>Offering data analysis, visualization, and machine learning solutions using Python.</p>
-            </div>
-            <div class="service-card">
-                <h3>Database Management</h3>
-                <p>Expertise in MySQL and mongoDB for efficient database design and management.</p>
-            </div>
-            <div class="service-card">
-                <h3>Programming</h3>
-                <p>Proficient in Python and C programming languages for various development needs.</p>
-            </div>
-            <div class="service-card">
-                <h3>Project Leadership</h3>
-                <p>Experienced in leading development teams and managing project timelines and deliverables.</p>
-            </div>
-        </div>
-    </section>
-    
-    
+<section id="about" class="cinematic-section">
+  <div class="section-ambient" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section-head reveal-on-scroll">
+      <h2>About</h2><span class="section-index">01</span>
+    </div>
 
+    <div class="about-grid reveal-group">
+      <div class="about-photo reveal-item">
+        <div class="photo-frame"><img src="images/profile.jpg" alt="Manoj Sai Tatavarthi"></div>
+        <span class="photo-caption">ENGINEER / AUTOMATOR</span>
+      </div>
+      <div class="about-copy reveal-item">
+        <span class="eyebrow">THE PERSON BEHIND THE SYSTEMS</span>
+        <p>I graduated with a <strong>B.Tech in Computer Science and Engineering (Data Science)</strong> from Raghu Institute of Technology in 2024, and joined <strong>Accenture</strong> that October. My day-to-day revolves around Microsoft 365 administration, supporting users and keeping the environment running smoothly. Alongside that, I build tools and automation by identifying recurring challenges, understanding what’s needed, and turning those requirements into practical solutions.</p>
+        <p>That's turned into a small set of tools now used inside my team: a <strong>.NET</strong> utility that builds the daily ticket report, a <strong>PowerShell</strong> script that prepares SLA exclusion comments, and an automation for SharePoint storage quotas currently in production validation.</p>
+        <div class="about-award"><span class="dot"></span> Recognised with a SPOT Award from client leadership for this work</div>
+      </div>
+    </div>
 
+    <div class="panels reveal-group">
+      <div class="panel reveal-item"><h3>SKILLS</h3>
+        <div class="skill-row"><span>Languages</span><span>Python, SQL</span></div>
+        <div class="skill-row"><span>Automation</span><span>.NET, PowerShell</span></div>
+        <div class="skill-row"><span>Web</span><span>HTML, CSS, JavaScript</span></div>
+        <div class="skill-row"><span>Platforms</span><span>SharePoint Admin, ServiceNow</span></div>
+        <div class="skill-row"><span>Database</span><span>MySQL</span></div>
+        <div class="skill-row"><span>Tools</span><span>VS Code, Git, Excel, PowerPoint</span></div>
+      </div>
+      <div class="panel reveal-item"><h3>EXPERIENCE</h3>
+        <div class="timeline-item"><div class="role">Packaged App Development Associate</div><div class="org">Accenture</div><div class="when">Oct 2024 — Present</div></div>
+        <div class="timeline-item"><div class="role">Intern, Python for Data Science</div><div class="org">HMI Engineering Services</div><div class="when">2024</div></div>
+        <div class="timeline-item"><div class="role">Intern, Machine Learning</div><div class="org">Slash Mark</div><div class="when">2024</div></div>
+      </div>
+      <div class="panel reveal-item"><h3>EDUCATION</h3>
+        <div class="timeline-item"><div class="role">B.Tech, CSE (Data Science)</div><div class="org">Raghu Institute of Technology</div><div class="when">2020 — 2024</div></div>
+        <div class="timeline-item"><div class="role">XII, MPC</div><div class="org">Narayana Junior College</div><div class="when">2020</div></div>
+        <div class="timeline-item"><div class="role">High School</div><div class="org">Vidya Vikas EM High School</div><div class="when">2018</div></div>
+      </div>
+    </div>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <p>Email: <a href="mailto:manojsai699@gmail.com">manojsai699@gmail.com</a></p>
-                <p>Mobile: +91 9848509413</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/manoj-tatavarthi" target="_blank"><img src="images/linkedin_icon.jpg" alt="LinkedIn"></a>
-                    <a href="https://www.instagram.com/_man_of_hearts_89/" target="_blank"><img src="images/instagram_icon.jpg" alt="Instagram"></a>
-                    <a href="https://github.com/manoj-sai-T" target="_blank"><img src="images/github_icon.png" alt="GitHub"></a>
-                </div>
-                <a href="images/Manoj_Sai_Tatavarthi_CV.pdf" download class="download-cv-btn">Download CV</a>
-            </div>
-            <div class="contact-form">  
-                <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
-                    <input type="hidden" name="access_key" value="50bc6271-76eb-441b-a7da-a020f07b0f06">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 Tatavarthi Manoj Sai. All rights reserved.</p>
-    </footer>
+    <div class="role-detail" data-parallax="0.04">
+      <div class="role-detail-head">
+        <div><span class="eyebrow">CURRENT ROLE</span><h3>Packaged App Development Associate — Accenture</h3><div class="org">M365 platform development &amp; ServiceNow operations</div></div>
+        <div class="when">OCT 23, 2024 — PRESENT</div>
+      </div>
+      <div class="role-cols reveal-group">
+        <div class="reveal-item"><h4>AUTOMATION I'VE BUILT</h4><ul>
+          <li>A .NET utility that reads the raw Incident, Request and previous-day Excel files, strips what isn't needed, and produces the structured daily report — cutting prep time from ~25–30 minutes to ~05–10.</li>
+          <li>A PowerShell utility that calculates elapsed time against ticket timelines to prepare SLA exclusion comments; now used by the wider team, not just me.</li>
+        </ul></div>
+        <div class="reveal-item"><h4>M365 &amp; PLATFORM WORK</h4><ul>
+          <li>Administering SharePoint sites and OneDrive across the team's M365 environment — structure, permissions and storage.</li>
+          <li>Supporting Power BI administration by managing user access, report-related activities, and ensuring smooth day-to-day platform operations.</li>
+          <li>Writing SQL queries to support teammates' reporting needs.</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const projects = [
-                {
-                    name: 'PLACEMENT PREDICTION USING ML',
-                    image: 'images/project1.jpg',
-                    description: '<b>Placement  Prediction  Using  ML </b><br> This project aims to predict whether a student will be placed or not based on various academic and personal factors. The system utilizes machine learning algorithms to analyze a dataset containing information such as gender, educational percentages, board of education, specialization, work experience, and test scores.',
-                    link: 'https://github.com/manoj-sai-T/PLACEMENT-PREDICTION-USING-ML'
-                },
-                {
-                    name: 'Blood donar finder',
-                    image: 'images/project2.jpg',
-                    description: '<b>Blood donar finder</b> <br>This is a simple GUI application built with Pythons tkinter library to manage blood donation requests. The application allows users to input their name, blood group, and phone number. It then checks the existing records in an Excel file and shows the names and phone numbers of people of same blood group.',
-                    link: 'https://github.com/manoj-sai-T/Blood_donar_finder'
-                },
-                {
-                    name: 'TIC-TAC-TOE GAME',
-                    image: 'images/project3.jpg',
-                    description: '<b>TIC-TAC-TOE Game</b> <br>Welcome to the Tic-Tac-Toe Game, a modern twist on the classic two-player game! This project is built using HTML, CSS, and JavaScript, offering a sleek dark mode interface with captivating animations that enhance the gameplay experience.',
-                    link: 'https://manoj-sai-t.github.io/Tic-Tac-Toe-Game/'
-                },
-                {
-                    name: 'TO-DO List',
-                    image: 'images/project4.jpg',
-                    description: '<b>TO-DO LIST</b> <br>A simple and intuitive to-do list application built with HTML, CSS, and JavaScript. This project allows users to add and remove tasks, helping them stay organized and manage their time effectively. It has both Dark and light modes.',
-                    link: 'https://manoj-sai-t.github.io/TO-DO-LIST/'
-                }
-                
-                // Add more projects here
-            ];
+<section id="projects" class="cinematic-section projects-section">
+  <div class="section-ambient" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section-head reveal-on-scroll"><h2>Work</h2><span class="section-index">02</span></div>
 
-            const projectsContainer = document.querySelector('.projects-container');
+    <div class="project-group">
+      <div class="group-label reveal-on-scroll"><h3>Built at Accenture</h3><div class="rule"></div></div>
+      <div class="project-grid reveal-group">
+        <div class="card reveal-item project-card"><div class="card-number">01</div><div class="card-top"><h4>Daily Ticket Reporting Utility</h4><span class="badge badge-internal">Internal build</span></div><p>A .NET utility that processes the raw Incident, Request and previous-day Excel exports, removes unwanted data, structures what's left, and generates the report the team needs every day.</p><div class="card-foot"><span class="card-metric">~25–30 min → ~05–10 min</span><span class="note">Built on a client laptop — no public repo</span></div></div>
+        <div class="card reveal-item project-card"><div class="card-number">02</div><div class="card-top"><h4>SLA Exclusion Comment Utility</h4><span class="badge badge-internal">Internal build</span></div><p>A PowerShell utility that runs the elapsed-time calculations behind SLA exclusion comments automatically from ticket timeline data — now adopted by other members of the team.</p><div class="card-foot"><span class="card-metric">In active team use</span><span class="note">Built on a client laptop — no public repo</span></div></div>
+      </div>
+    </div>
 
-            projects.forEach(project => {
-                const projectCard = document.createElement('div');
-                projectCard.classList.add('project-card');
+    <div class="project-group">
+      <div class="group-label reveal-on-scroll"><h3>Independent projects</h3><div class="rule"></div></div>
+      <div class="project-grid reveal-group">
+        <div class="card reveal-item project-card"><div class="card-number">03</div><div class="card-top"><h4>Placement Prediction using ML</h4><span class="badge badge-open">Open source</span></div><p>Predicts whether a student will be placed based on academic and personal factors — gender, percentages, board, specialization, work experience and test scores — using machine learning.</p><div class="card-foot"><a href="https://github.com/manoj-sai-T/PLACEMENT-PREDICTION-USING-ML" target="_blank" rel="noopener">View on GitHub →</a></div></div>
+        <div class="card reveal-item project-card"><div class="card-number">04</div><div class="card-top"><h4>Blood Donor Finder</h4><span class="badge badge-open">Open source</span></div><p>A Tkinter desktop app for managing blood donation requests. Enter a blood group and it checks existing Excel records to surface matching donors' names and phone numbers.</p><div class="card-foot"><a href="https://github.com/manoj-sai-T/Blood_donar_finder" target="_blank" rel="noopener">View on GitHub →</a></div></div>
+        <div class="card reveal-item project-card"><div class="card-number">05</div><div class="card-top"><h4>Tic-Tac-Toe Game</h4><span class="badge badge-open">Open source</span></div><p>A modern take on the classic game — HTML, CSS and JavaScript with a dark-mode interface and small animations that make the gameplay feel more alive.</p><div class="card-foot"><a href="https://manoj-sai-t.github.io/Tic-Tac-Toe-Game/" target="_blank" rel="noopener">View live →</a></div></div>
+        <div class="card reveal-item project-card"><div class="card-number">06</div><div class="card-top"><h4>To-Do List</h4><span class="badge badge-open">Open source</span></div><p>A simple, intuitive to-do list built with HTML, CSS and JavaScript, with both dark and light modes, for adding and clearing tasks quickly.</p><div class="card-foot"><a href="https://manoj-sai-t.github.io/TO-DO-LIST/" target="_blank" rel="noopener">View live →</a></div></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                const projectCardInner = document.createElement('div');
-                projectCardInner.classList.add('project-card-inner');
+<section id="certificates" class="cinematic-section">
+  <div class="wrap">
+    <div class="section-head reveal-on-scroll"><h2>Credentials</h2><span class="section-index">03</span></div>
+    <div class="cert-grid reveal-group">
+      <div class="cert-card reveal-item"><div class="issuer">Microsoft</div><div class="name">AZ-204: Developing Solutions for Microsoft Azure</div><a href="certificates/certificate10.pdf" target="_blank">View →</a></div>
+      <div class="cert-card reveal-item"><div class="issuer">GitHub</div><div class="name">GitHub Foundations</div><a href="certificates/certificate11.pdf" target="_blank">View →</a></div>
+      <div class="cert-card reveal-item"><div class="issuer">HackerRank</div><div class="name">Python Basics</div><a href="certificates/certificate2.pdf" target="_blank">View →</a></div>
+      <div class="cert-card reveal-item"><div class="issuer">NPTEL</div><div class="name">Programming, Data Structures and Algorithms using Python</div><a href="certificates/certificate1.jpg" target="_blank">View →</a></div>
+      <div class="cert-card reveal-item"><div class="issuer">Infosys Springboard</div><div class="name">Python for Data Science</div><a href="certificates/certificate3.pdf" target="_blank">View →</a></div>
+      <div class="cert-card reveal-item"><div class="issuer">Coding Ninjas</div><div class="name">Coding Competition — Certificate of Achievement</div><a href="certificates/certificate4.pdf" target="_blank">View →</a></div>
+      <div class="cert-card reveal-item"><div class="issuer">Great Learning</div><div class="name">Data Science Foundations</div><a href="certificates/certificate5.jpg" target="_blank">View →</a></div>
+      <div class="cert-card reveal-item"><div class="issuer">HMI Engineering Services</div><div class="name">Data Science Using Python (Internship)</div><a href="certificates/certificate6.pdf" target="_blank">View →</a></div>
+      <div class="cert-card reveal-item"><div class="issuer">Udemy</div><div class="name">Complete SQL and RDBMS</div><a href="certificates/certificate7.jpg" target="_blank">View →</a></div>
+      <div class="cert-card reveal-item"><div class="issuer">Slash Mark</div><div class="name">Machine Learning (Internship)</div><a href="certificates/certificate8.pdf" target="_blank">View →</a></div>
+      <div class="cert-card reveal-item"><div class="issuer">Udemy</div><div class="name">JavaScript with HTML5 and CSS3</div><a href="certificates/certificate9.pdf" target="_blank">View →</a></div>
+    </div>
+  </div>
+</section>
 
-                const projectImage = document.createElement('img');
-                projectImage.classList.add('project-image');
-                projectImage.src = project.image;
-                projectImage.alt = project.name;
+<section id="services" class="cinematic-section">
+  <div class="wrap">
+    <div class="section-head reveal-on-scroll"><h2>Services</h2><span class="section-index">04</span></div>
+    <div class="services-grid reveal-group">
+      <div class="service reveal-item"><span class="service-no">01</span><h3>Process automation</h3><p>Turning repeated manual steps — report prep, data cleanup, timeline calculations — into scripts and utilities in .NET and PowerShell.</p></div>
+      <div class="service reveal-item"><span class="service-no">02</span><h3>Data science &amp; ML</h3><p>Data analysis, visualization and machine learning solutions using Python, from raw dataset to working prediction model.</p></div>
+      <div class="service reveal-item"><span class="service-no">03</span><h3>Web design</h3><p>Visually clean, user-friendly websites built with HTML, CSS and JavaScript.</p></div>
+      <div class="service reveal-item"><span class="service-no">04</span><h3>Database management</h3><p>Schema design and day-to-day management with MySQL, plus SQL support for reporting and analysis tasks.</p></div>
+      <div class="service reveal-item"><span class="service-no">05</span><h3>SharePoint &amp; platform support</h3><p>Administration and light automation on SharePoint — storage quotas, report uploads, and site upkeep.</p></div>
+      <div class="service reveal-item"><span class="service-no">06</span><h3>Project leadership</h3><p>Coordinating small teams and timelines to keep deliverables on track.</p></div>
+    </div>
+  </div>
+</section>
 
-                const projectDescription = document.createElement('div');
-                projectDescription.classList.add('project-description');
-                projectDescription.innerHTML = `<p>${project.description}</p>`;
+<section id="contact" class="cinematic-section contact-section">
+  <div class="contact-backdrop" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section-head reveal-on-scroll"><h2>Contact</h2><span class="section-index">05</span></div>
+    <div class="contact-grid reveal-group">
+      <div class="reveal-item contact-copy">
+        <span class="eyebrow">LET'S BUILD SOMETHING USEFUL</span>
+        <h3>Have a repetitive process?<br><span>Let's automate it.</span></h3>
+        <div class="contact-line"><span>Email</span><a href="mailto:manojsai699@gmail.com">manojsai699@gmail.com</a></div>
+        <div class="contact-line"><span>Mobile</span><a href="tel:+919848509413">+91 98485 09413</a></div>
+        <div class="contact-line"><span>Based in</span><span>India</span></div>
+        
+<div class="social-links">
+    <a href="https://www.linkedin.com/in/manoj-tatavarthi/"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
 
-                const projectLink = document.createElement('a');
-                projectLink.classList.add('project-link');
-                projectLink.href = project.link;
-                projectLink.innerHTML = '&#10149;'; // Unicode for right arrow
+    <a href="https://github.com/manoj-sai-T"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+    </a>
 
-                projectCardInner.appendChild(projectImage);
-                projectCardInner.appendChild(projectDescription);
-                projectCardInner.appendChild(projectLink);
-                projectCard.appendChild(projectCardInner);
-                projectsContainer.appendChild(projectCard);
-            });
-        });
+    <a href="https://www.instagram.com/_man_of_hearts_89/"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+</div>
 
-        function toggleSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section.style.display === 'none' || section.style.display === '') {
-                section.style.display = 'block';
-            } else {
-                section.style.display = 'none';
-            }
-        }
-    </script>
+      </div>
+      <div class="contact-form reveal-item">
+        <form id="contact-form">
+  <input
+    type="text"
+    name="name"
+    placeholder="Your name"
+    autocomplete="name"
+    required
+  >
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Your email"
+    autocomplete="email"
+    required
+  >
+
+  <textarea
+    name="message"
+    placeholder="Tell me what you're working on..."
+    required
+  ></textarea>
+
+  <button type="submit" class="magnetic" id="contact-submit">
+    <span class="button-text">Send message</span>
+    <span class="button-arrow">↗</span>
+  </button>
+
+  <div
+    id="form-status"
+    class="form-status"
+    role="status"
+    aria-live="polite"
+  ></div>
+</form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><p>&copy; 2026 Manoj Sai Tatavarthi. All rights reserved.</p></footer>
+<script src="script.js"></script>
 </body>
-
 </html>
